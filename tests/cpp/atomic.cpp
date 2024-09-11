@@ -14,6 +14,13 @@
  */
 
 #include <cppad/cg.hpp>
+#include <cppad/cg/lang/latex/latex.hpp>
+#include <cppad/cg/lang/mathml/mathml.hpp>
+#include <cppad/cg/dae_index_reduction/dae_structural_index_reduction.hpp>
+#include <cppad/cg/dae_index_reduction/soares_secchi.hpp>
+#include <cppad/cg/dae_index_reduction/pantelides.hpp>
+#include <cppad/cg/dae_index_reduction/dummy_deriv.hpp>
+#include <cppad/cg/support/cppadcg_eigen.hpp>
 
 using namespace CppAD;
 using namespace CppAD::cg;
