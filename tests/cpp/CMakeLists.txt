@@ -16,7 +16,7 @@ add_executable(${PROJECT_NAME} ${SRC_FILES})
 find_package(GTest CONFIG REQUIRED)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/../src/libs
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../src/libs
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
