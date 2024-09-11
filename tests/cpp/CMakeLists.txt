@@ -9,6 +9,7 @@ project(cpp-tests LANGUAGES C CXX)
 
 set(SRC_FILES
         test_variable.cpp
+        atomic.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})
@@ -17,10 +18,10 @@ find_package(GTest CONFIG REQUIRED)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/../../src/libs
+        ${CPPAD_INCLUDE_DIRS}
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
         GTest::gtest GTest::gtest_main GTest::gmock GTest::gmock_main
-        symbolic-lib
-        "${TORCH_LIBRARIES}"
+        cppad_lib
 )

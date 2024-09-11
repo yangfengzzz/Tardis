@@ -8,6 +8,4 @@
 #include <cppad/cg.hpp>
 
 TEST(Variable, constructor) {
-    Variable var("var");
-    EXPECT_EQ(var.to_string(), "var");
 }

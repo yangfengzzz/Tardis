@@ -4,6 +4,8 @@ set(CMAKE_CXX_STANDARD 17)
 
 project(Tardis LANGUAGES C CXX ASM)
 
+include(cmake/textfile2h.cmake)
+
 # Try to import all Python components potentially needed by nanobind
 find_package(Python 3.8
         REQUIRED COMPONENTS Interpreter Development.Module
@@ -24,7 +26,7 @@ add_subdirectory(third_party)
 # ==================================================================================================
 # ADD LIBS
 # ==================================================================================================
-#add_subdirectory(src/libs)
+add_subdirectory(src/libs)
 
 set(BINDING_FILES
 #        src/py_binding/py_variable.cpp
