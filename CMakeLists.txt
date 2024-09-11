@@ -29,7 +29,7 @@ add_subdirectory(third_party)
 add_subdirectory(src/libs)
 
 set(BINDING_FILES
-#        src/py_binding/py_variable.cpp
+        src/py_binding/py_ad.cpp
         src/py_binding/py_tardis_ext.cpp
 )
 
@@ -68,11 +68,12 @@ nanobind_add_stub(
 # ==================================================================================================
 target_include_directories(py_tardis_ext PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/src/libs
+        ${CPPAD_INCLUDE_DIRS}
 )
 
-target_link_libraries(py_tardis_ext PRIVATE
-        tardis-lib
-)
+#target_link_libraries(py_tardis_ext PRIVATE
+#        tardis-lib
+#)
 
 # ==================================================================================================
 # TEST

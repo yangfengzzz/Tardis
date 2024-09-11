@@ -4,10 +4,9 @@
 #  personal capacity and am not conveying any rights to any intellectual
 #  property of any third parties.
 
-import pySymbolic as sym
+import tardis as td
 import pytest
 
-def test_variable():
-    var = sym.Variable("var name")
+def test_ad():
+    var = td.AD(2)
     print(var)
-    sym.MakeMatrixVariable(1, 1, "aa")

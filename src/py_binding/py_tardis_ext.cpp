@@ -9,10 +9,10 @@
 namespace nb = nanobind;
 using namespace nb::literals;
 
-extern void bindVariable(nb::module_& m);
+extern void bindAD(nb::module_& m);
 
-NB_MODULE(py_symbolic_ext, m) {
-    m.doc() = "python binding for Symbolic";
+NB_MODULE(py_tardis_ext, m) {
+    m.doc() = "python binding for Tardis";
 
-    bindVariable(m);
+    bindAD(m);
 }

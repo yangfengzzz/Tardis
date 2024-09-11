@@ -1,17 +1,8 @@
-/* --------------------------------------------------------------------------
- *  CppADCodeGen: C++ Algorithmic Differentiation with Source Code Generation:
- *    Copyright (C) 2019 Joao Leal
- *
- *  CppADCodeGen is distributed under multiple licenses:
- *
- *   - Eclipse Public License Version 1.0 (EPL1), and
- *   - GNU General Public License Version 3 (GPL3).
- *
- *  EPL1 terms and conditions can be found in the file "epl-v10.txt", while
- *  terms and conditions for the GPL3 can be found in the file "gpl3.txt".
- * ----------------------------------------------------------------------------
- * Author: Joao Leal
- */
+//  Copyright (c) 2024 Feng Yang
+//
+//  I am making my contributions/submissions to this project solely in my
+//  personal capacity and am not conveying any rights to any intellectual
+//  property of any third parties.
 
 #include <cppad/cg.hpp>
 #include <cppad/cg/lang/latex/latex.hpp>
