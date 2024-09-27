@@ -8,5 +8,5 @@ import tardis as td
 import pytest
 
 def test_ad():
-    var = td.AD(2)
+    var = td.Double(2)
     print(var)

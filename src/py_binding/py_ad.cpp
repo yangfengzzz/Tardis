@@ -25,5 +25,5 @@ void visitAD(nb::module_& m, const char* name) {
 }
 
 void bindAD(nb::module_& m) {
-    visitAD<double>(m, "AD");
+    visitAD<double>(m, "Double");
 }

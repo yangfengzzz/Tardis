@@ -10,6 +10,10 @@ project(cpp-tests LANGUAGES C CXX)
 set(SRC_FILES
         test_variable.cpp
         atomic.cpp
+        source_generation_c.cpp
+        source_generation_dot.cpp
+        source_generation_latex.cpp
+        source_generation_mathml.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})
